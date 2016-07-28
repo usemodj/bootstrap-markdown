@@ -543,6 +543,9 @@
 
       // Build preview element
       replacementContainer.html(content);
+      console.log('>>replacementContainer: ', replacementContainer);
+      //MathJax
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub, replacementContainer[0]]);
 
       if (afterContainer && afterContainer.attr('class') == 'md-footer') {
         // If there is footer element, insert the preview container before it
