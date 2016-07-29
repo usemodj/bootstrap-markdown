@@ -543,7 +543,7 @@
 
       // Build preview element
       replacementContainer.html(content);
-      console.log('>>replacementContainer: ', replacementContainer);
+
       //MathJax
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, replacementContainer[0]]);
 
